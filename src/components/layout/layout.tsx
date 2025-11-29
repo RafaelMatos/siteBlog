@@ -16,7 +16,9 @@ const ptSansCaption = PT_Sans_Caption({
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={`${inter.className} dark relative flex min-h-screen flex-col font-inter`}>
+    <div
+      className={`${inter.className} dark relative flex min-h-screen flex-col bg-gray-700 font-inter`}
+    >
       <Header />
       <main className="mb-12 mt-10 flex flex-1 flex-col">{children}</main>
       <Footer />
