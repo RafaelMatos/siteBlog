@@ -27,7 +27,7 @@ export function BlogList() {
               BLOG
             </span>
             {/* Titulo */}
-            <h1 className="text-balance text-start text-heading-lg md:text-left md:text-heading-xl">
+            <h1 className="text-balance text-start text-heading-lg text-gray-100 md:text-left md:text-heading-xl">
               {pageTitle}
             </h1>
           </div>
