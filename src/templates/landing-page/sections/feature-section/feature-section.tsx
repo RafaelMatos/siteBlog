@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export const FeatureSection = () => {
   return (
     <section className="container grid gap-6 pb-8 pt-8 md:grid-cols-2 md:py-10">
-      <div className="flex flex-col gap-2 rounded-lg bg-gray-700 p-6 md:p-12">
+      <div className="flex flex-col gap-2 rounded-lg border border-gray-500 bg-gray-500 p-6 transition-colors ease-in-out hover:border-gray-400 md:p-12">
         <span className="w-fit rounded-sm bg-blue-400 px-2 py-1 text-body-tag uppercase text-blue-200 shadow-sm">
           Simples
         </span>
@@ -15,7 +15,7 @@ export const FeatureSection = () => {
           Crie um catálogo de produtos online em poucos minutos
         </h2>
       </div>
-      <div className="flex flex-col gap-2 rounded-lg bg-gray-700 p-6 md:p-12">
+      <div className="flex flex-col gap-2 rounded-lg border border-gray-500 bg-gray-500 p-6 transition-colors ease-in-out hover:border-gray-400 md:p-12">
         <span className="w-fit rounded-sm bg-blue-400 px-2 py-1 text-body-tag uppercase text-blue-200 shadow-sm">
           Prático
         </span>
@@ -24,7 +24,7 @@ export const FeatureSection = () => {
         </h2>
       </div>
       <div className="col-span-full flex flex-col gap-2">
-        <div className="grid grid-cols-1 gap-12 rounded-lg bg-gray-700 p-6 md:grid-cols-2 md:gap-4 md:p-12">
+        <div className="grid grid-cols-1 gap-12 rounded-lg border border-gray-500 bg-gray-500 p-6 transition-colors ease-in-out hover:border-gray-400 md:grid-cols-2 md:gap-4 md:p-12">
           <div className="flex flex-col gap-4">
             <span className="w-fit rounded-sm bg-blue-400 px-2 py-1 text-body-tag uppercase text-blue-200 shadow-sm">
               Personalizável
