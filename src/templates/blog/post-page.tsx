@@ -9,19 +9,17 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
 import { useShare } from "@/hooks";
-import { allPosts } from "contentlayer/generated";
+import { Post } from "contentlayer/generated";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
-export const PostPage = () => {
-  const router = useRouter();
+export type PostPageProps = {
+  post: Post;
+};
 
-  const slug = router.query.slug as string;
-  const post = allPosts.find((post) => post.slug.toLowerCase() === slug.toLowerCase())!;
-
+export const PostPage = ({ post }: PostPageProps) => {
   const publishDate = new Date(post?.date).toLocaleDateString("pt-BR");
-  const postUrl = `http://localhost:3000/blog/${slug}`;
+  const postUrl = `http://localhost:3000/blog/${post.slug}`;
 
   const { shareButtons } = useShare({
     url: postUrl,
